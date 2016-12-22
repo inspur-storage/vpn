@@ -1,5 +1,10 @@
 #!/bin/sh
-
-nohup bash ./connectvpn.sh &
-sleep 1s
-echo "vpn is start!!!"
+ID=`ps -ef|grep connectvpn|grep bash|awk -F" " '{print $2}'`
+if [ -z "$ID" ]
+then
+        nohup bash ./connectvpn.sh &
+        sleep 1
+        echo "vpn is start!!!"
+else
+        echo "VPN is already running !!!"
+fi
