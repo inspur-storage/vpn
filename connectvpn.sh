@@ -15,11 +15,12 @@ VPN=`ifconfig | grep ppp0`
 if [ -z "$VPN" ]
 then	
 	echo $VPN
+	echo "VPN is down"
 	poff america
 	poff
         echo "connect to vpn ..."
-        pon america
-	sleep 10s
+	pptpsetup --create america --server krbf2.xynode.cc --username 604734184 --password 111111  --encrypt --start
+	sleep 1s
 	route add -net 0.0.0.0 dev ppp0
 	echo "ok"
 fi

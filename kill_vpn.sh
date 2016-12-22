@@ -31,3 +31,4 @@ else
 
 	fi
 fi
+rm -rf nohup.out
