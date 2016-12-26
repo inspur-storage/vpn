@@ -1,8 +1,8 @@
 #!/bin/bash
-$SERVER=krbf2.xynode.cc
-$USER=604734184
-$PASS=111111
-$ENCRYPT=--encrypt
+SERVER=krbf2.xynode.cc
+USER=604734184
+PASS=111111
+ENCRYPT=--encrypt
 
 poff america
 poff
