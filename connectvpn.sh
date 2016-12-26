@@ -14,11 +14,11 @@ while true
 do
 VPN=`ifconfig | grep ppp0`
 #echo $VPN
-        
+DATE=`date`        
 if [ -z "$VPN" ]
 then	
 	echo $VPN
-	echo "VPN is down"
+	echo "$DATE VPN is down"
 	poff america
 	poff
         echo "connect to vpn ..."
@@ -26,7 +26,8 @@ then
 	sleep 1s
 	route add -net 0.0.0.0 dev ppp0
 	echo "ok"
+else
+	sleep 10s
+	echo "$DATE vpn is ok"
 fi
-sleep 10s
-echo "vpn is ok"
 done
