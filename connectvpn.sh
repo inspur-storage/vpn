@@ -27,7 +27,7 @@ then
 	route add -net 0.0.0.0 dev ppp0
 	echo "ok"
 else
-	sleep 10s
+	sleep 5s
 	echo "$DATE vpn is ok"
 fi
 done
