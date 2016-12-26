@@ -1,5 +1,8 @@
 #!/bin/bash
-
+$SERVER=krbf2.xynode.cc
+$USER=604734184
+$PASS=111111
+$ENCRYPT=--encrypt
 
 poff america
 poff
@@ -19,7 +22,7 @@ then
 	poff america
 	poff
         echo "connect to vpn ..."
-	pptpsetup --create america --server krbf2.xynode.cc --username 604734184 --password 111111  --encrypt --start
+	pptpsetup --create america --server $SERVER --username $USER --password $PASS  $ENCRYPT --start
 	sleep 1s
 	route add -net 0.0.0.0 dev ppp0
 	echo "ok"
