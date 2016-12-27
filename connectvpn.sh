@@ -1,6 +1,11 @@
 #!/bin/bash
-SERVER=krbf2.xynode.cc
+#SERVER=ec2-52-78-114-56.ap-northeast-2.compute.amazonaws.com
+#SERVER=jp5bm.xynode.cc
+SERVER=krfs1.xynode.cc
+#SERVER=jp3lq.xynode.cc
+#SERVER=jp4uy.xynode.cc
 USER=604734184
+#USER=test
 PASS=111111
 ENCRYPT=--encrypt
 

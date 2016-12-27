@@ -1,4 +1,4 @@
-#!/bin/sh
+#/bin/sh
 ID=`ps -ef|grep connectvpn|grep bash|awk -F" " '{print $2}'`
 if [ -z "$ID" ]
 then
